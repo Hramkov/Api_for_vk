@@ -18,5 +18,4 @@ localhost:3000
 
 You can use in your /etc/hosts:
 127.0.0.1 myserver.com
-# Api_for_vk
-# api_for_vk
+
