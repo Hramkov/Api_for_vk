@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Online:
+  = @take.online
+p
+  strong Person:
+  = @take.person
+
+= link_to 'Edit', edit_take_path(@take)
+'|
+= link_to 'Back', takes_path

@@ -1,0 +1,24 @@
+.container
+  h1 Listing takes
+
+  table
+    thead
+      tr
+        th Online
+        th Person
+        th
+        th
+        th
+
+    tbody
+      - @takes.each do |take|
+        tr
+          td = take.online
+          td = link_to take.person.name, "https://vk.com/id#{take.person.vk}"
+          td = link_to 'Show', take
+          td = link_to 'Edit', edit_take_path(take)
+          td = link_to 'Destroy', take, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+  br
+
+  = link_to 'New Take', new_take_path
